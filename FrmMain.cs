@@ -18,7 +18,7 @@ namespace MinecraftTextureStudio
 {
     public partial class FrmMain : Form
     {
-        public static string version = "1.0.8";
+        public static string version = "1.12";
         public static int undoLimit = 50;
         public static float pixelSize = 10;
         public static int textureWidth;
@@ -34,13 +34,13 @@ namespace MinecraftTextureStudio
         public static int itemMouseUpY;
         public static bool itemIsMouseDown;
         public static Bitmap itemRestoreTexture;
-        
+
         public static bool textureClicked = false;
         public static bool prevTexturePreviewMouseDown = false;
         public static bool texturePreviewMouseDown = false;
         public static bool clickComplete = false;
         public static bool showCubes = false;
-        
+
         public static string indexesJSON = "assets\\indexes";
         public static string objectsPath = "assets\\objects";
 
@@ -118,14 +118,14 @@ namespace MinecraftTextureStudio
 
         public static SortOption sortOption;
         public static Color packNameColour;
-        
+
         public List<TextureChange> undos;
         public List<TextureChange> redos;
         public List<TextureChange> itemUndos;
         public List<TextureChange> itemRedos;
         public int undoIndex;
         public int itemUndoIndex;
-        
+
         public FrmMain()
         {
             try
@@ -837,27 +837,27 @@ namespace MinecraftTextureStudio
                 }
                 else if (e.Index == 6)
                 {
-                    colour = Color.FromArgb(255, 170, 0);                    
+                    colour = Color.FromArgb(255, 170, 0);
                 }
                 else if (e.Index == 7)
                 {
-                    colour = Color.FromArgb(170, 170, 170);                    
+                    colour = Color.FromArgb(170, 170, 170);
                 }
                 else if (e.Index == 8)
                 {
-                    colour = Color.FromArgb(85, 85, 85);                    
+                    colour = Color.FromArgb(85, 85, 85);
                 }
                 else if (e.Index == 9)
                 {
-                    colour = Color.FromArgb(85, 85, 255);                    
+                    colour = Color.FromArgb(85, 85, 255);
                 }
                 else if (e.Index == 10)
                 {
-                    colour = Color.FromArgb(85, 255, 85);                    
+                    colour = Color.FromArgb(85, 255, 85);
                 }
                 else if (e.Index == 11)
                 {
-                    colour = Color.FromArgb(85, 255, 255);                    
+                    colour = Color.FromArgb(85, 255, 255);
                 }
                 else if (e.Index == 12)
                 {
@@ -2200,7 +2200,7 @@ namespace MinecraftTextureStudio
             if (y - 1 >= 0)
             {
                 Color northColour = paintBucketPicture.GetPixel(x, y - 1);
-                
+
                 if (northColour.R == colour.R &&
                     northColour.G == colour.G &&
                     northColour.B == colour.B)
@@ -2453,7 +2453,7 @@ namespace MinecraftTextureStudio
             }
             else if (blockName == "Destroy")
             {
-                Bitmap loadPicture = new Bitmap(FrmMain.directory + 
+                Bitmap loadPicture = new Bitmap(FrmMain.directory +
                     "\\assets\\minecraft\\textures\\blocks\\destroy_stage_" + layer1frameIndex + ".png");
 
                 texture1 = new Bitmap(loadPicture);
@@ -2553,7 +2553,7 @@ namespace MinecraftTextureStudio
                     {
                         checkWidth = checkWidth * 2;
                     }
-                    
+
                     //using width for both to make sure it's square
                     if (checkWidth != textureStrip.Width)
                     {
@@ -3089,7 +3089,7 @@ namespace MinecraftTextureStudio
             Bitmap currentTexture = getTexture(sender);
             if (currentTexture != null)
             {
-                lock (currentTexture)    
+                lock (currentTexture)
                 {
                     for (int y = 0; y < currentTexture.Height; y++)
                     {
@@ -3143,7 +3143,7 @@ namespace MinecraftTextureStudio
 
                 ModelType modelType = FrmTexturePreview.getModelType(blockName);
                 List<Cube> cubes = TexturePaint3D.getCubePositions(modelType);
-                
+
                 lblTexture3D.Visible = false;
                 if (cubes.Count == 0)
                 {
@@ -3206,7 +3206,7 @@ namespace MinecraftTextureStudio
 
                 resetPanels();
                 setPanelsLocation();
-                
+
                 if (panelConfig == PanelConfiguration.T1x1)
                 {
                     panel1.Size = new Size(160, 160);
@@ -3939,7 +3939,7 @@ namespace MinecraftTextureStudio
 
                     directory = path.Substring(0, path.LastIndexOf("\\")) + "\\" + texturePackFileName;
 
-                    Directory.CreateDirectory(directory);                        
+                    Directory.CreateDirectory(directory);
 
                     if (extractJarOption == "1")
                     {
@@ -4334,7 +4334,7 @@ namespace MinecraftTextureStudio
                 //read pack.mcmeta
                 StreamReader reader = null;
                 string descriptionLine = "";
-                    
+
                 try
                 {
                     reader = new StreamReader(new FileStream(directory + "\\pack.mcmeta", FileMode.Open, FileAccess.Read));
@@ -4431,7 +4431,7 @@ namespace MinecraftTextureStudio
             frmMain.blocksClearItems();
             frmMain.itemsClearItems();
             frmMain.soundsClearItems();
-            
+
             loadBlocks(frmMain);
             loadItems(frmMain);
             Sounds.loadSounds();
@@ -4627,7 +4627,7 @@ namespace MinecraftTextureStudio
 
                 saveTexture(bitmap, undoTexture.index);
                 restoreTexture = new Bitmap(bitmap);
-                
+
                 undoIndex--;
                 if (undoIndex < 0)
                 {
@@ -4757,7 +4757,7 @@ namespace MinecraftTextureStudio
             }
 
             //find the json file for the current version of minecraft
-            if (String.IsNullOrEmpty(minecraftJarPath) || minecraftJarPath.Length < 4 || 
+            if (String.IsNullOrEmpty(minecraftJarPath) || minecraftJarPath.Length < 4 ||
                 !File.Exists(minecraftJarPath))
             {
                 MessageBox.Show("Minecraft jar file not found. Go to the settings tab, locate your minecraft jar file and " +
@@ -5164,7 +5164,7 @@ namespace MinecraftTextureStudio
                 Console.WriteLine("clickPos = " + FrmMain.textureClickPos);
                 Console.WriteLine("Mouse pos = " + FrmTexturePreview.mouseStartX + ", " + FrmTexturePreview.mouseStartY);
                 Console.WriteLine("Eye position = " + FrmTexturePreview.eyePosition);*/
-                
+
                 textureClicked = false;
 
                 bool foundCube = false;
@@ -5969,20 +5969,42 @@ namespace MinecraftTextureStudio
         {
 
         }
+
+        private void panelColour2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel14_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+            private void panelColour23_Paint(object sender, PaintEventArgs e)
+            {
+
+            }
+
+        private void lblVersion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public enum PanelConfiguration
-    {
-        T1x1, T4x4, T4x2, T8x4
+        {
+            T1x1, T4x4, T4x2, T8x4
+        }
+
+        public enum PaintMode
+        {
+            Pen, Line, Rectangle, Bucket, Clear, Picker, None
+        }
+
+        public enum SortOption
+        {
+            Id, Alphabetical
+        }
     }
 
-    public enum PaintMode
-    {
-        Pen, Line, Rectangle, Bucket, Clear, Picker, None
-    }
 
-    public enum SortOption
-    {
-        Id, Alphabetical
-    }
-}
+

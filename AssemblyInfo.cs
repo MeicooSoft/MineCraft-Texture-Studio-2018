@@ -6,10 +6,10 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Minecraft Texture Studio")]
+[assembly: AssemblyTitle("Minecraft Texture Studio 2018")]
 [assembly: AssemblyDescription("Texture Pack Creator for Minecraft")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Tertrih Fertray")]
+[assembly: AssemblyCompany("MeicooSoft")]
 [assembly: AssemblyProduct("Minecraft Texture Studio")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -54,5 +54,5 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyKeyFile("")]
 [assembly: AssemblyKeyName("")]
-[assembly: AssemblyVersionAttribute("1.0.8.0")]
-[assembly: AssemblyFileVersionAttribute("1.0.8.0")]
+[assembly: AssemblyVersionAttribute("1.0.12.0")]
+[assembly: AssemblyFileVersionAttribute("1.0.12.0")]

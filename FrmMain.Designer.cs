@@ -82,7 +82,6 @@
             this.panelColour2 = new System.Windows.Forms.Panel();
             this.panelColour9 = new System.Windows.Forms.Panel();
             this.panelColour1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnBucket = new MinecraftTextureStudio.ToggleButton();
             this.btnRectangle = new MinecraftTextureStudio.ToggleButton();
             this.btnLine = new MinecraftTextureStudio.ToggleButton();
@@ -142,7 +141,6 @@
             this.itemPanelColour2 = new System.Windows.Forms.Panel();
             this.itemPanelColour9 = new System.Windows.Forms.Panel();
             this.itemPanelColour1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnItemBucket = new MinecraftTextureStudio.ToggleButton();
             this.btnItemRectangle = new MinecraftTextureStudio.ToggleButton();
             this.btnItemLine = new MinecraftTextureStudio.ToggleButton();
@@ -194,6 +192,7 @@
             this.txtMinecraftPath = new System.Windows.Forms.TextBox();
             this.lblMinecraftPath = new System.Windows.Forms.Label();
             this.tabAbout = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblCoded = new System.Windows.Forms.Label();
@@ -206,7 +205,6 @@
             this.btnSaveToMinecraft = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.btnOpenDirectory = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabPackDetails.SuspendLayout();
             this.panelThumbnail.SuspendLayout();
@@ -242,7 +240,7 @@
             this.tabControl.Location = new System.Drawing.Point(173, 31);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(702, 782);
+            this.tabControl.Size = new System.Drawing.Size(776, 782);
             this.tabControl.TabIndex = 32;
             // 
             // tabPackDetails
@@ -263,7 +261,7 @@
             this.tabPackDetails.Controls.Add(this.lblTexturePackName);
             this.tabPackDetails.Location = new System.Drawing.Point(4, 25);
             this.tabPackDetails.Name = "tabPackDetails";
-            this.tabPackDetails.Size = new System.Drawing.Size(694, 753);
+            this.tabPackDetails.Size = new System.Drawing.Size(768, 753);
             this.tabPackDetails.TabIndex = 2;
             this.tabPackDetails.Text = "Pack Details";
             this.tabPackDetails.UseVisualStyleBackColor = true;
@@ -470,7 +468,7 @@
             this.tabBlocks.Location = new System.Drawing.Point(4, 25);
             this.tabBlocks.Name = "tabBlocks";
             this.tabBlocks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBlocks.Size = new System.Drawing.Size(694, 753);
+            this.tabBlocks.Size = new System.Drawing.Size(768, 753);
             this.tabBlocks.TabIndex = 0;
             this.tabBlocks.Text = "Blocks";
             this.tabBlocks.UseVisualStyleBackColor = true;
@@ -492,7 +490,7 @@
             this.chkShowCubes.Checked = true;
             this.chkShowCubes.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkShowCubes.Enabled = false;
-            this.chkShowCubes.Location = new System.Drawing.Point(407, 109);
+            this.chkShowCubes.Location = new System.Drawing.Point(637, 10);
             this.chkShowCubes.Name = "chkShowCubes";
             this.chkShowCubes.Size = new System.Drawing.Size(102, 20);
             this.chkShowCubes.TabIndex = 85;
@@ -535,14 +533,13 @@
             this.panel11.Controls.Add(this.panelColour2);
             this.panel11.Controls.Add(this.panelColour9);
             this.panel11.Controls.Add(this.panelColour1);
-            this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.btnBucket);
             this.panel11.Controls.Add(this.btnRectangle);
             this.panel11.Controls.Add(this.btnLine);
             this.panel11.Controls.Add(this.btnPen);
-            this.panel11.Location = new System.Drawing.Point(0, 635);
+            this.panel11.Location = new System.Drawing.Point(9, 266);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(648, 118);
+            this.panel11.Size = new System.Drawing.Size(238, 305);
             this.panel11.TabIndex = 84;
             // 
             // panelColour24
@@ -562,6 +559,7 @@
             this.panelColour23.Name = "panelColour23";
             this.panelColour23.Size = new System.Drawing.Size(20, 20);
             this.panelColour23.TabIndex = 118;
+            this.panelColour23.Paint += new System.Windows.Forms.PaintEventHandler(this.panelColour23_Paint);
             // 
             // panelColour22
             // 
@@ -623,7 +621,7 @@
             this.btnPicker.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnPicker.Font = new System.Drawing.Font("Arial", 10F);
             this.btnPicker.ForeColor = System.Drawing.Color.Black;
-            this.btnPicker.Location = new System.Drawing.Point(477, 61);
+            this.btnPicker.Location = new System.Drawing.Point(11, 205);
             this.btnPicker.Name = "btnPicker";
             this.btnPicker.Size = new System.Drawing.Size(75, 23);
             this.btnPicker.TabIndex = 111;
@@ -638,7 +636,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClear.Font = new System.Drawing.Font("Arial", 10F);
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(477, 34);
+            this.btnClear.Location = new System.Drawing.Point(90, 205);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 110;
@@ -649,7 +647,7 @@
             // 
             // btnColour
             // 
-            this.btnColour.Location = new System.Drawing.Point(224, 61);
+            this.btnColour.Location = new System.Drawing.Point(90, 115);
             this.btnColour.Name = "btnColour";
             this.btnColour.Size = new System.Drawing.Size(75, 23);
             this.btnColour.TabIndex = 109;
@@ -659,7 +657,7 @@
             // 
             // btnRedo
             // 
-            this.btnRedo.Location = new System.Drawing.Point(561, 61);
+            this.btnRedo.Location = new System.Drawing.Point(89, 234);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(75, 23);
             this.btnRedo.TabIndex = 108;
@@ -669,7 +667,7 @@
             // 
             // btnUndo
             // 
-            this.btnUndo.Location = new System.Drawing.Point(561, 34);
+            this.btnUndo.Location = new System.Drawing.Point(11, 234);
             this.btnUndo.Name = "btnUndo";
             this.btnUndo.Size = new System.Drawing.Size(75, 23);
             this.btnUndo.TabIndex = 107;
@@ -681,7 +679,7 @@
             // 
             this.panelColour.BackColor = System.Drawing.Color.Black;
             this.panelColour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelColour.Location = new System.Drawing.Point(278, 37);
+            this.panelColour.Location = new System.Drawing.Point(64, 112);
             this.panelColour.Name = "panelColour";
             this.panelColour.Size = new System.Drawing.Size(20, 20);
             this.panelColour.TabIndex = 102;
@@ -690,7 +688,7 @@
             // 
             this.lblColour.AutoSize = true;
             this.lblColour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColour.Location = new System.Drawing.Point(223, 37);
+            this.lblColour.Location = new System.Drawing.Point(7, 112);
             this.lblColour.Name = "lblColour";
             this.lblColour.Size = new System.Drawing.Size(51, 20);
             this.lblColour.TabIndex = 101;
@@ -821,6 +819,7 @@
             this.panelColour2.Name = "panelColour2";
             this.panelColour2.Size = new System.Drawing.Size(20, 20);
             this.panelColour2.TabIndex = 86;
+            this.panelColour2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelColour2_Paint);
             // 
             // panelColour9
             // 
@@ -840,23 +839,13 @@
             this.panelColour1.Size = new System.Drawing.Size(20, 20);
             this.panelColour1.TabIndex = 85;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(442, 20);
-            this.label6.TabIndex = 84;
-            this.label6.Text = "Drag and drop a picture or use the paint tools to alter textures";
-            // 
             // btnBucket
             // 
             this.btnBucket.BackColor = System.Drawing.SystemColors.Control;
             this.btnBucket.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnBucket.Font = new System.Drawing.Font("Arial", 10F);
             this.btnBucket.ForeColor = System.Drawing.Color.Black;
-            this.btnBucket.Location = new System.Drawing.Point(393, 61);
+            this.btnBucket.Location = new System.Drawing.Point(9, 176);
             this.btnBucket.Name = "btnBucket";
             this.btnBucket.Size = new System.Drawing.Size(75, 23);
             this.btnBucket.TabIndex = 106;
@@ -871,7 +860,7 @@
             this.btnRectangle.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnRectangle.Font = new System.Drawing.Font("Arial", 10F);
             this.btnRectangle.ForeColor = System.Drawing.Color.Black;
-            this.btnRectangle.Location = new System.Drawing.Point(393, 34);
+            this.btnRectangle.Location = new System.Drawing.Point(90, 176);
             this.btnRectangle.Name = "btnRectangle";
             this.btnRectangle.Size = new System.Drawing.Size(75, 23);
             this.btnRectangle.TabIndex = 105;
@@ -886,7 +875,7 @@
             this.btnLine.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnLine.Font = new System.Drawing.Font("Arial", 10F);
             this.btnLine.ForeColor = System.Drawing.Color.Black;
-            this.btnLine.Location = new System.Drawing.Point(309, 61);
+            this.btnLine.Location = new System.Drawing.Point(89, 144);
             this.btnLine.Name = "btnLine";
             this.btnLine.Size = new System.Drawing.Size(75, 23);
             this.btnLine.TabIndex = 104;
@@ -900,7 +889,7 @@
             this.btnPen.BackColor = System.Drawing.Color.Green;
             this.btnPen.Font = new System.Drawing.Font("Arial", 10F);
             this.btnPen.ForeColor = System.Drawing.Color.White;
-            this.btnPen.Location = new System.Drawing.Point(309, 34);
+            this.btnPen.Location = new System.Drawing.Point(9, 147);
             this.btnPen.Name = "btnPen";
             this.btnPen.Size = new System.Drawing.Size(75, 23);
             this.btnPen.TabIndex = 103;
@@ -913,7 +902,7 @@
             // 
             this.cmbFrames2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFrames2.FormattingEnabled = true;
-            this.cmbFrames2.Location = new System.Drawing.Point(301, 42);
+            this.cmbFrames2.Location = new System.Drawing.Point(509, 45);
             this.cmbFrames2.Name = "cmbFrames2";
             this.cmbFrames2.Size = new System.Drawing.Size(90, 24);
             this.cmbFrames2.TabIndex = 55;
@@ -923,7 +912,7 @@
             // 
             this.cmbFrames1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFrames1.FormattingEnabled = true;
-            this.cmbFrames1.Location = new System.Drawing.Point(79, 42);
+            this.cmbFrames1.Location = new System.Drawing.Point(343, 45);
             this.cmbFrames1.Name = "cmbFrames1";
             this.cmbFrames1.Size = new System.Drawing.Size(90, 24);
             this.cmbFrames1.TabIndex = 54;
@@ -943,7 +932,7 @@
             // 
             this.lblFilename1.AutoSize = true;
             this.lblFilename1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename1.Location = new System.Drawing.Point(9, 50);
+            this.lblFilename1.Location = new System.Drawing.Point(270, 48);
             this.lblFilename1.Name = "lblFilename1";
             this.lblFilename1.Size = new System.Drawing.Size(64, 16);
             this.lblFilename1.TabIndex = 34;
@@ -954,7 +943,7 @@
             // 
             this.lblFilename9.AutoSize = true;
             this.lblFilename9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename9.Location = new System.Drawing.Point(453, 438);
+            this.lblFilename9.Location = new System.Drawing.Point(602, 441);
             this.lblFilename9.Name = "lblFilename9";
             this.lblFilename9.Size = new System.Drawing.Size(64, 16);
             this.lblFilename9.TabIndex = 50;
@@ -965,7 +954,7 @@
             // 
             this.lblFilename3.AutoSize = true;
             this.lblFilename3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename3.Location = new System.Drawing.Point(9, 244);
+            this.lblFilename3.Location = new System.Drawing.Point(270, 247);
             this.lblFilename3.Name = "lblFilename3";
             this.lblFilename3.Size = new System.Drawing.Size(64, 16);
             this.lblFilename3.TabIndex = 36;
@@ -976,7 +965,7 @@
             // 
             this.lblFilename8.AutoSize = true;
             this.lblFilename8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename8.Location = new System.Drawing.Point(453, 244);
+            this.lblFilename8.Location = new System.Drawing.Point(602, 244);
             this.lblFilename8.Name = "lblFilename8";
             this.lblFilename8.Size = new System.Drawing.Size(64, 16);
             this.lblFilename8.TabIndex = 48;
@@ -987,7 +976,7 @@
             // 
             this.lblFilename2.AutoSize = true;
             this.lblFilename2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename2.Location = new System.Drawing.Point(231, 50);
+            this.lblFilename2.Location = new System.Drawing.Point(439, 50);
             this.lblFilename2.Name = "lblFilename2";
             this.lblFilename2.Size = new System.Drawing.Size(64, 16);
             this.lblFilename2.TabIndex = 38;
@@ -998,7 +987,7 @@
             // 
             this.lblFilename6.AutoSize = true;
             this.lblFilename6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename6.Location = new System.Drawing.Point(231, 438);
+            this.lblFilename6.Location = new System.Drawing.Point(439, 441);
             this.lblFilename6.Name = "lblFilename6";
             this.lblFilename6.Size = new System.Drawing.Size(64, 16);
             this.lblFilename6.TabIndex = 46;
@@ -1009,7 +998,7 @@
             // 
             this.lblFilename4.AutoSize = true;
             this.lblFilename4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename4.Location = new System.Drawing.Point(231, 244);
+            this.lblFilename4.Location = new System.Drawing.Point(439, 247);
             this.lblFilename4.Name = "lblFilename4";
             this.lblFilename4.Size = new System.Drawing.Size(64, 16);
             this.lblFilename4.TabIndex = 40;
@@ -1020,7 +1009,7 @@
             // 
             this.lblFilename7.AutoSize = true;
             this.lblFilename7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename7.Location = new System.Drawing.Point(453, 50);
+            this.lblFilename7.Location = new System.Drawing.Point(602, 50);
             this.lblFilename7.Name = "lblFilename7";
             this.lblFilename7.Size = new System.Drawing.Size(64, 16);
             this.lblFilename7.TabIndex = 44;
@@ -1031,7 +1020,7 @@
             // 
             this.lblFilename5.AutoSize = true;
             this.lblFilename5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename5.Location = new System.Drawing.Point(9, 438);
+            this.lblFilename5.Location = new System.Drawing.Point(270, 441);
             this.lblFilename5.Name = "lblFilename5";
             this.lblFilename5.Size = new System.Drawing.Size(64, 16);
             this.lblFilename5.TabIndex = 42;
@@ -1042,7 +1031,7 @@
             // 
             this.panel1.AllowDrop = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(9, 72);
+            this.panel1.Location = new System.Drawing.Point(273, 72);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 160);
             this.panel1.TabIndex = 33;
@@ -1052,7 +1041,7 @@
             // 
             this.panel3.AllowDrop = true;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(9, 266);
+            this.panel3.Location = new System.Drawing.Point(273, 266);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(160, 160);
             this.panel3.TabIndex = 35;
@@ -1062,7 +1051,7 @@
             // 
             this.panel9.AllowDrop = true;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Location = new System.Drawing.Point(453, 460);
+            this.panel9.Location = new System.Drawing.Point(605, 460);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(160, 160);
             this.panel9.TabIndex = 49;
@@ -1072,7 +1061,7 @@
             // 
             this.panel2.AllowDrop = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(231, 72);
+            this.panel2.Location = new System.Drawing.Point(439, 72);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(160, 160);
             this.panel2.TabIndex = 37;
@@ -1082,7 +1071,7 @@
             // 
             this.panel8.AllowDrop = true;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Location = new System.Drawing.Point(453, 266);
+            this.panel8.Location = new System.Drawing.Point(605, 266);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(160, 160);
             this.panel8.TabIndex = 47;
@@ -1092,7 +1081,7 @@
             // 
             this.panel4.AllowDrop = true;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(231, 266);
+            this.panel4.Location = new System.Drawing.Point(439, 266);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(160, 160);
             this.panel4.TabIndex = 39;
@@ -1102,7 +1091,7 @@
             // 
             this.panel6.AllowDrop = true;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Location = new System.Drawing.Point(231, 460);
+            this.panel6.Location = new System.Drawing.Point(439, 460);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(160, 160);
             this.panel6.TabIndex = 45;
@@ -1112,7 +1101,7 @@
             // 
             this.panel5.AllowDrop = true;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(9, 460);
+            this.panel5.Location = new System.Drawing.Point(273, 460);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(160, 160);
             this.panel5.TabIndex = 41;
@@ -1122,7 +1111,7 @@
             // 
             this.panel7.AllowDrop = true;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Location = new System.Drawing.Point(453, 72);
+            this.panel7.Location = new System.Drawing.Point(605, 72);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(160, 160);
             this.panel7.TabIndex = 43;
@@ -1138,7 +1127,7 @@
             this.tabItems.Controls.Add(this.itemPanel);
             this.tabItems.Location = new System.Drawing.Point(4, 25);
             this.tabItems.Name = "tabItems";
-            this.tabItems.Size = new System.Drawing.Size(694, 753);
+            this.tabItems.Size = new System.Drawing.Size(768, 753);
             this.tabItems.TabIndex = 8;
             this.tabItems.Text = "Items";
             this.tabItems.UseVisualStyleBackColor = true;
@@ -1147,7 +1136,7 @@
             // 
             this.cmbItemFrames.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbItemFrames.FormattingEnabled = true;
-            this.cmbItemFrames.Location = new System.Drawing.Point(79, 42);
+            this.cmbItemFrames.Location = new System.Drawing.Point(411, 38);
             this.cmbItemFrames.Name = "cmbItemFrames";
             this.cmbItemFrames.Size = new System.Drawing.Size(90, 24);
             this.cmbItemFrames.TabIndex = 86;
@@ -1187,14 +1176,13 @@
             this.panel12.Controls.Add(this.itemPanelColour2);
             this.panel12.Controls.Add(this.itemPanelColour9);
             this.panel12.Controls.Add(this.itemPanelColour1);
-            this.panel12.Controls.Add(this.label8);
             this.panel12.Controls.Add(this.btnItemBucket);
             this.panel12.Controls.Add(this.btnItemRectangle);
             this.panel12.Controls.Add(this.btnItemLine);
             this.panel12.Controls.Add(this.btnItemPen);
-            this.panel12.Location = new System.Drawing.Point(0, 635);
+            this.panel12.Location = new System.Drawing.Point(3, 33);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(648, 118);
+            this.panel12.Size = new System.Drawing.Size(239, 344);
             this.panel12.TabIndex = 85;
             // 
             // itemPanelColour24
@@ -1275,7 +1263,7 @@
             this.btnItemPicker.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnItemPicker.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemPicker.ForeColor = System.Drawing.Color.Black;
-            this.btnItemPicker.Location = new System.Drawing.Point(477, 61);
+            this.btnItemPicker.Location = new System.Drawing.Point(11, 208);
             this.btnItemPicker.Name = "btnItemPicker";
             this.btnItemPicker.Size = new System.Drawing.Size(75, 23);
             this.btnItemPicker.TabIndex = 111;
@@ -1290,7 +1278,7 @@
             this.btnItemClear.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnItemClear.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemClear.ForeColor = System.Drawing.Color.Black;
-            this.btnItemClear.Location = new System.Drawing.Point(477, 34);
+            this.btnItemClear.Location = new System.Drawing.Point(103, 208);
             this.btnItemClear.Name = "btnItemClear";
             this.btnItemClear.Size = new System.Drawing.Size(75, 23);
             this.btnItemClear.TabIndex = 110;
@@ -1301,7 +1289,7 @@
             // 
             // btnItemColour
             // 
-            this.btnItemColour.Location = new System.Drawing.Point(224, 61);
+            this.btnItemColour.Location = new System.Drawing.Point(103, 121);
             this.btnItemColour.Name = "btnItemColour";
             this.btnItemColour.Size = new System.Drawing.Size(75, 23);
             this.btnItemColour.TabIndex = 109;
@@ -1311,7 +1299,7 @@
             // 
             // btnItemRedo
             // 
-            this.btnItemRedo.Location = new System.Drawing.Point(561, 61);
+            this.btnItemRedo.Location = new System.Drawing.Point(103, 237);
             this.btnItemRedo.Name = "btnItemRedo";
             this.btnItemRedo.Size = new System.Drawing.Size(75, 23);
             this.btnItemRedo.TabIndex = 108;
@@ -1321,7 +1309,7 @@
             // 
             // btnItemUndo
             // 
-            this.btnItemUndo.Location = new System.Drawing.Point(561, 34);
+            this.btnItemUndo.Location = new System.Drawing.Point(11, 237);
             this.btnItemUndo.Name = "btnItemUndo";
             this.btnItemUndo.Size = new System.Drawing.Size(75, 23);
             this.btnItemUndo.TabIndex = 107;
@@ -1333,7 +1321,7 @@
             // 
             this.itemPanelColour.BackColor = System.Drawing.Color.Black;
             this.itemPanelColour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.itemPanelColour.Location = new System.Drawing.Point(278, 37);
+            this.itemPanelColour.Location = new System.Drawing.Point(64, 121);
             this.itemPanelColour.Name = "itemPanelColour";
             this.itemPanelColour.Size = new System.Drawing.Size(20, 20);
             this.itemPanelColour.TabIndex = 102;
@@ -1342,7 +1330,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(223, 37);
+            this.label7.Location = new System.Drawing.Point(7, 121);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 20);
             this.label7.TabIndex = 101;
@@ -1492,23 +1480,13 @@
             this.itemPanelColour1.Size = new System.Drawing.Size(20, 20);
             this.itemPanelColour1.TabIndex = 85;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 7);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(442, 20);
-            this.label8.TabIndex = 84;
-            this.label8.Text = "Drag and drop a picture or use the paint tools to alter textures";
-            // 
             // btnItemBucket
             // 
             this.btnItemBucket.BackColor = System.Drawing.SystemColors.Control;
             this.btnItemBucket.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnItemBucket.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemBucket.ForeColor = System.Drawing.Color.Black;
-            this.btnItemBucket.Location = new System.Drawing.Point(393, 61);
+            this.btnItemBucket.Location = new System.Drawing.Point(103, 179);
             this.btnItemBucket.Name = "btnItemBucket";
             this.btnItemBucket.Size = new System.Drawing.Size(75, 23);
             this.btnItemBucket.TabIndex = 106;
@@ -1523,7 +1501,7 @@
             this.btnItemRectangle.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnItemRectangle.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemRectangle.ForeColor = System.Drawing.Color.Black;
-            this.btnItemRectangle.Location = new System.Drawing.Point(393, 34);
+            this.btnItemRectangle.Location = new System.Drawing.Point(103, 150);
             this.btnItemRectangle.Name = "btnItemRectangle";
             this.btnItemRectangle.Size = new System.Drawing.Size(75, 23);
             this.btnItemRectangle.TabIndex = 105;
@@ -1538,7 +1516,7 @@
             this.btnItemLine.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnItemLine.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemLine.ForeColor = System.Drawing.Color.Black;
-            this.btnItemLine.Location = new System.Drawing.Point(309, 61);
+            this.btnItemLine.Location = new System.Drawing.Point(11, 179);
             this.btnItemLine.Name = "btnItemLine";
             this.btnItemLine.Size = new System.Drawing.Size(75, 23);
             this.btnItemLine.TabIndex = 104;
@@ -1552,7 +1530,7 @@
             this.btnItemPen.BackColor = System.Drawing.Color.Green;
             this.btnItemPen.Font = new System.Drawing.Font("Arial", 10F);
             this.btnItemPen.ForeColor = System.Drawing.Color.White;
-            this.btnItemPen.Location = new System.Drawing.Point(309, 34);
+            this.btnItemPen.Location = new System.Drawing.Point(11, 150);
             this.btnItemPen.Name = "btnItemPen";
             this.btnItemPen.Size = new System.Drawing.Size(75, 23);
             this.btnItemPen.TabIndex = 103;
@@ -1566,7 +1544,7 @@
             this.cmbItems.Enabled = false;
             this.cmbItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbItems.FormattingEnabled = true;
-            this.cmbItems.Location = new System.Drawing.Point(9, 8);
+            this.cmbItems.Location = new System.Drawing.Point(344, 3);
             this.cmbItems.Name = "cmbItems";
             this.cmbItems.Size = new System.Drawing.Size(232, 24);
             this.cmbItems.TabIndex = 35;
@@ -1575,7 +1553,7 @@
             // 
             this.lblFilename.AutoSize = true;
             this.lblFilename.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilename.Location = new System.Drawing.Point(9, 50);
+            this.lblFilename.Location = new System.Drawing.Point(341, 41);
             this.lblFilename.Name = "lblFilename";
             this.lblFilename.Size = new System.Drawing.Size(64, 16);
             this.lblFilename.TabIndex = 37;
@@ -1585,7 +1563,7 @@
             // 
             this.itemPanel.AllowDrop = true;
             this.itemPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.itemPanel.Location = new System.Drawing.Point(9, 72);
+            this.itemPanel.Location = new System.Drawing.Point(344, 71);
             this.itemPanel.Name = "itemPanel";
             this.itemPanel.Size = new System.Drawing.Size(160, 160);
             this.itemPanel.TabIndex = 36;
@@ -1602,7 +1580,7 @@
             this.tabSounds.Controls.Add(this.panelDropSound);
             this.tabSounds.Location = new System.Drawing.Point(4, 25);
             this.tabSounds.Name = "tabSounds";
-            this.tabSounds.Size = new System.Drawing.Size(694, 753);
+            this.tabSounds.Size = new System.Drawing.Size(768, 753);
             this.tabSounds.TabIndex = 6;
             this.tabSounds.Text = "Sounds";
             this.tabSounds.UseVisualStyleBackColor = true;
@@ -1711,7 +1689,7 @@
             this.tabFont.Controls.Add(this.panelFont);
             this.tabFont.Location = new System.Drawing.Point(4, 25);
             this.tabFont.Name = "tabFont";
-            this.tabFont.Size = new System.Drawing.Size(694, 753);
+            this.tabFont.Size = new System.Drawing.Size(768, 753);
             this.tabFont.TabIndex = 7;
             this.tabFont.Text = "Font";
             this.tabFont.UseVisualStyleBackColor = true;
@@ -1797,7 +1775,7 @@
             this.tabOrganise.Controls.Add(this.btnSaveChanges);
             this.tabOrganise.Location = new System.Drawing.Point(4, 25);
             this.tabOrganise.Name = "tabOrganise";
-            this.tabOrganise.Size = new System.Drawing.Size(694, 753);
+            this.tabOrganise.Size = new System.Drawing.Size(768, 753);
             this.tabOrganise.TabIndex = 4;
             this.tabOrganise.Text = "Organise";
             this.tabOrganise.UseVisualStyleBackColor = true;
@@ -1894,7 +1872,7 @@
             this.tabSettings.Controls.Add(this.lblMinecraftPath);
             this.tabSettings.Location = new System.Drawing.Point(4, 25);
             this.tabSettings.Name = "tabSettings";
-            this.tabSettings.Size = new System.Drawing.Size(694, 753);
+            this.tabSettings.Size = new System.Drawing.Size(768, 753);
             this.tabSettings.TabIndex = 3;
             this.tabSettings.Text = "Settings";
             this.tabSettings.UseVisualStyleBackColor = true;
@@ -1980,7 +1958,7 @@
             // btnExtractedJarBrowse
             // 
             this.btnExtractedJarBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExtractedJarBrowse.Location = new System.Drawing.Point(664, 75);
+            this.btnExtractedJarBrowse.Location = new System.Drawing.Point(579, 71);
             this.btnExtractedJarBrowse.Name = "btnExtractedJarBrowse";
             this.btnExtractedJarBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnExtractedJarBrowse.TabIndex = 8;
@@ -1994,7 +1972,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExtractedJarPath.Location = new System.Drawing.Point(135, 75);
             this.txtExtractedJarPath.Name = "txtExtractedJarPath";
-            this.txtExtractedJarPath.Size = new System.Drawing.Size(514, 22);
+            this.txtExtractedJarPath.Size = new System.Drawing.Size(429, 22);
             this.txtExtractedJarPath.TabIndex = 7;
             // 
             // lblExtractedJarPath
@@ -2009,7 +1987,7 @@
             // btnJarBrowse
             // 
             this.btnJarBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnJarBrowse.Location = new System.Drawing.Point(664, 42);
+            this.btnJarBrowse.Location = new System.Drawing.Point(579, 42);
             this.btnJarBrowse.Name = "btnJarBrowse";
             this.btnJarBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnJarBrowse.TabIndex = 5;
@@ -2023,7 +2001,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMinecraftJarPath.Location = new System.Drawing.Point(135, 42);
             this.txtMinecraftJarPath.Name = "txtMinecraftJarPath";
-            this.txtMinecraftJarPath.Size = new System.Drawing.Size(514, 22);
+            this.txtMinecraftJarPath.Size = new System.Drawing.Size(429, 22);
             this.txtMinecraftJarPath.TabIndex = 4;
             // 
             // lblMinecraftJarPath
@@ -2038,7 +2016,7 @@
             // btnPathBrowse
             // 
             this.btnPathBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPathBrowse.Location = new System.Drawing.Point(664, 9);
+            this.btnPathBrowse.Location = new System.Drawing.Point(579, 9);
             this.btnPathBrowse.Name = "btnPathBrowse";
             this.btnPathBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnPathBrowse.TabIndex = 2;
@@ -2052,7 +2030,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMinecraftPath.Location = new System.Drawing.Point(135, 9);
             this.txtMinecraftPath.Name = "txtMinecraftPath";
-            this.txtMinecraftPath.Size = new System.Drawing.Size(514, 22);
+            this.txtMinecraftPath.Size = new System.Drawing.Size(429, 22);
             this.txtMinecraftPath.TabIndex = 1;
             // 
             // lblMinecraftPath
@@ -2074,10 +2052,19 @@
             this.tabAbout.Controls.Add(this.lblTitle);
             this.tabAbout.Location = new System.Drawing.Point(4, 25);
             this.tabAbout.Name = "tabAbout";
-            this.tabAbout.Size = new System.Drawing.Size(694, 753);
+            this.tabAbout.Size = new System.Drawing.Size(768, 753);
             this.tabAbout.TabIndex = 5;
             this.tabAbout.Text = "About";
             this.tabAbout.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 118);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(287, 16);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Minecraft texture Studio 2018 by MeicoomonVR";
             // 
             // pictureBox1
             // 
@@ -2085,7 +2072,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(25, 203);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.Size = new System.Drawing.Size(465, 250);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -2106,9 +2093,9 @@
             this.lblCoded.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCoded.Location = new System.Drawing.Point(21, 87);
             this.lblCoded.Name = "lblCoded";
-            this.lblCoded.Size = new System.Drawing.Size(401, 24);
+            this.lblCoded.Size = new System.Drawing.Size(416, 24);
             this.lblCoded.TabIndex = 2;
-            this.lblCoded.Text = "Based on tertrih MineCraft Texture Studio 1.0 V";
+            this.lblCoded.Text = "Based on tertrih MineCraft Texture Studio 1.0.8 V";
             this.lblCoded.Click += new System.EventHandler(this.lblCoded_Click);
             // 
             // lblVersion
@@ -2120,6 +2107,7 @@
             this.lblVersion.Size = new System.Drawing.Size(120, 24);
             this.lblVersion.TabIndex = 1;
             this.lblVersion.Text = "Version 1.2.0";
+            this.lblVersion.Click += new System.EventHandler(this.lblVersion_Click);
             // 
             // lblTitle
             // 
@@ -2202,21 +2190,12 @@
             this.btnOpenDirectory.UseVisualStyleBackColor = true;
             this.btnOpenDirectory.Click += new System.EventHandler(this.btnOpenDirectory_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(22, 118);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(287, 16);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Minecraft texture Studio 2018 by MeicoomonVR";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(876, 812);
+            this.ClientSize = new System.Drawing.Size(950, 812);
             this.Controls.Add(this.btnOpenDirectory);
             this.Controls.Add(this.btnSaveToMinecraft);
             this.Controls.Add(this.btnSave);
@@ -2227,7 +2206,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Minecraft Texture Studio";
+            this.Text = "Minecraft Texture Studio 2018";
             this.tabControl.ResumeLayout(false);
             this.tabPackDetails.ResumeLayout(false);
             this.tabPackDetails.PerformLayout();
@@ -2321,7 +2300,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblCoded;
-        private System.Windows.Forms.Label lblVersion;
         public System.Windows.Forms.ComboBox cmbBlocks;
         private System.Windows.Forms.Label lblSortOption;
         private System.Windows.Forms.Panel panel10;
@@ -2371,7 +2349,6 @@
         private System.Windows.Forms.Panel panelColour2;
         private System.Windows.Forms.Panel panelColour9;
         private System.Windows.Forms.Panel panelColour1;
-        private System.Windows.Forms.Label label6;
         private ToggleButton btnBucket;
         private ToggleButton btnRectangle;
         private ToggleButton btnLine;
@@ -2431,13 +2408,13 @@
         private System.Windows.Forms.Panel itemPanelColour2;
         private System.Windows.Forms.Panel itemPanelColour9;
         private System.Windows.Forms.Panel itemPanelColour1;
-        private System.Windows.Forms.Label label8;
         private ToggleButton btnItemBucket;
         private ToggleButton btnItemRectangle;
         private ToggleButton btnItemLine;
         private ToggleButton btnItemPen;
         private System.Windows.Forms.ComboBox cmbItemFrames;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
