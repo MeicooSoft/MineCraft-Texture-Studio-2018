@@ -5,6 +5,7 @@ Minecraft Texture Studio 2018: https://sourceforge.net/projects/minecraft-textur
 
 
 Based on Minecraft Texture Studio Version 1.0.8
+
 Minecraft Texture Studio Version 1.0.8: https://sourceforge.net/projects/minecrafttexturestudio/
 
 Features:
