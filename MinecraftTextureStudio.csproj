@@ -199,6 +199,7 @@
     <Compile Include="OrganiseResourcePack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Sounds.cs" />
+    <Compile Include="System\window.cs" />
     <Compile Include="TextureChange.cs" />
     <Compile Include="TexturePaint3D.cs" />
     <Compile Include="TextureUpdate.cs" />
@@ -251,6 +252,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="childForm\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

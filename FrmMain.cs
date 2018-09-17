@@ -18,7 +18,7 @@ namespace MinecraftTextureStudio
 {
     public partial class FrmMain : Form
     {
-        public static string version = "1.12";
+        public static string version = "1.12.2";
         public static int undoLimit = 50;
         public static float pixelSize = 10;
         public static int textureWidth;
@@ -5988,6 +5988,18 @@ namespace MinecraftTextureStudio
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+          
+
+        }
+
+   
+        
+
+        
     }
 
     public enum PanelConfiguration
